@@ -134,6 +134,16 @@ ll modInverse(ll a, ll m) {
     return result;
 }
 
+vector<string> split(string & s, char b, bool empty = false){
+    stringstream ss(s);
+    vector<string> tokens; string token;
+    while(getline(ss, token, b)){
+        if(!empty && !token.size()) continue;
+        tokens.push_back(token);
+    }
+    return tokens;
+}
+
 void solve(){
 
 }
