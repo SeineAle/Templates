@@ -145,6 +145,11 @@ vector<string> split(string & s, char b, bool empty = false){
     return tokens;
 }
 
+void factorials(vll & fact_, ll n, ll m = MOD){
+    fact_.push_back(1);
+    f1(i, n) fact_.push_back(mulm(fact_.back(), i, m));
+}
+
 /***********************************************/
 void solve(){
 
