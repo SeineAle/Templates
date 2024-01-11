@@ -21,8 +21,9 @@ vector<string> ret = {"NO", "YES"};
 #define fi first
 #define se second
 
-#define f(n) for(ll i = 0; i < n; i ++)
-#define f_(n) for(ll i = n-1; i >= 0; i --)
+#define f(i, n) for(ll i = 0; i < n; i ++)
+#define f1(i, n) for(ll i = 1; i <= n; i ++)
+#define f_(i, n) for(ll i = n-1; i >= 0; i --)
 
 #define all(vec) vec.begin(), vec.end()
 #define rall(vec) vec.rbegin(), vec.rend()
@@ -38,7 +39,7 @@ vector<string> ret = {"NO", "YES"};
 #define pq(t) priority_queue<t>
 #define rpq(t) priority_queue<t, vector<t>, greater<t>>
 
-#define sz(x) long long(x.size())
+#define sz(x) (long long)(x.size())
 
 #define out(A) {for(auto a : A)cout << a << " "; cout << endl;}
 #define in(A) {for(sz(A))cin >> A[i];}
@@ -144,6 +145,7 @@ vector<string> split(string & s, char b, bool empty = false){
     return tokens;
 }
 
+/***********************************************/
 void solve(){
 
 }
