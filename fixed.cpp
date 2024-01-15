@@ -42,7 +42,7 @@ vector<string> ret = {"NO", "YES"};
 #define sz(x) (long long)(x.size())
 
 #define out(A) {for(auto a : A)cout << a << " "; cout << endl;}
-#define in(A) {for(sz(A))cin >> A[i];}
+#define in(A) {f(i, sz(A))cin >> A[i];}
 
 // MODULO ARITHMATICS
 #define ceil(n, m) (((n) + (m) - 1) / (m)) 
@@ -149,6 +149,8 @@ void factorials(vll & fact_, ll n, ll m = MOD){
     fact_.push_back(1);
     f1(i, n) fact_.push_back(mulm(fact_.back(), i, m));
 }
+
+vector<vll> dir = {{0,0}, {-1, 0}, {0, 1}, {1, 0}, {0, -1}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
 
 /***********************************************/
 void solve(){
